@@ -13,6 +13,10 @@
 		1C76CF45240B920E00A9659D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76CF43240B920E00A9659D /* Main.storyboard */; };
 		1C76CF47240B921100A9659D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C76CF46240B921100A9659D /* Assets.xcassets */; };
 		1C76CF4A240B921100A9659D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C76CF48240B921100A9659D /* LaunchScreen.storyboard */; };
+		1C76CF52240B94CC00A9659D /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76CF51240B94CC00A9659D /* TodoViewModel.swift */; };
+		1C76CF55240B97FE00A9659D /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76CF53240B97FE00A9659D /* TodoItemTableViewCell.swift */; };
+		1C76CF56240B97FE00A9659D /* TodoItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76CF54240B97FE00A9659D /* TodoItemTableViewCell.xib */; };
+		6687E9554C51060D57D6D197 /* Pods_TableViewMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D591C0452DE00DA1451FBC /* Pods_TableViewMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		1C76CF46240B921100A9659D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C76CF49240B921100A9659D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C76CF4B240B921100A9659D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C76CF51240B94CC00A9659D /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		1C76CF53240B97FE00A9659D /* TodoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemTableViewCell.swift; sourceTree = "<group>"; };
+		1C76CF54240B97FE00A9659D /* TodoItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoItemTableViewCell.xib; sourceTree = "<group>"; };
+		41A48FC9AF13938BCA86CAF1 /* Pods-TableViewMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewMVVM.debug.xcconfig"; path = "Target Support Files/Pods-TableViewMVVM/Pods-TableViewMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		45D591C0452DE00DA1451FBC /* Pods_TableViewMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F818521FD22A65C14184CF /* Pods-TableViewMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewMVVM.release.xcconfig"; path = "Target Support Files/Pods-TableViewMVVM/Pods-TableViewMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6687E9554C51060D57D6D197 /* Pods_TableViewMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				1C76CF3C240B920E00A9659D /* TableViewMVVM */,
 				1C76CF3B240B920E00A9659D /* Products */,
+				46406DA726B5198CE8BA5DF1 /* Pods */,
+				ADE870290C26268FC9EC7A4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +76,29 @@
 				1C76CF46240B921100A9659D /* Assets.xcassets */,
 				1C76CF48240B921100A9659D /* LaunchScreen.storyboard */,
 				1C76CF4B240B921100A9659D /* Info.plist */,
+				1C76CF51240B94CC00A9659D /* TodoViewModel.swift */,
+				1C76CF53240B97FE00A9659D /* TodoItemTableViewCell.swift */,
+				1C76CF54240B97FE00A9659D /* TodoItemTableViewCell.xib */,
 			);
 			path = TableViewMVVM;
+			sourceTree = "<group>";
+		};
+		46406DA726B5198CE8BA5DF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41A48FC9AF13938BCA86CAF1 /* Pods-TableViewMVVM.debug.xcconfig */,
+				D8F818521FD22A65C14184CF /* Pods-TableViewMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ADE870290C26268FC9EC7A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D591C0452DE00DA1451FBC /* Pods_TableViewMVVM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C76CF4E240B921100A9659D /* Build configuration list for PBXNativeTarget "TableViewMVVM" */;
 			buildPhases = (
+				B7574C96FFDC35AA6AA8DA17 /* [CP] Check Pods Manifest.lock */,
 				1C76CF36240B920E00A9659D /* Sources */,
 				1C76CF37240B920E00A9659D /* Frameworks */,
 				1C76CF38240B920E00A9659D /* Resources */,
+				9E6269A33D7A089B9283D6F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +163,65 @@
 			files = (
 				1C76CF4A240B921100A9659D /* LaunchScreen.storyboard in Resources */,
 				1C76CF47240B921100A9659D /* Assets.xcassets in Resources */,
+				1C76CF56240B97FE00A9659D /* TodoItemTableViewCell.xib in Resources */,
 				1C76CF45240B920E00A9659D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E6269A33D7A089B9283D6F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewMVVM/Pods-TableViewMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewMVVM/Pods-TableViewMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableViewMVVM/Pods-TableViewMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7574C96FFDC35AA6AA8DA17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableViewMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C76CF36240B920E00A9659D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C76CF55240B97FE00A9659D /* TodoItemTableViewCell.swift in Sources */,
 				1C76CF42240B920E00A9659D /* ViewController.swift in Sources */,
 				1C76CF3E240B920E00A9659D /* AppDelegate.swift in Sources */,
 				1C76CF40240B920E00A9659D /* SceneDelegate.swift in Sources */,
+				1C76CF52240B94CC00A9659D /* TodoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +363,7 @@
 		};
 		1C76CF4F240B921100A9659D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A48FC9AF13938BCA86CAF1 /* Pods-TableViewMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +381,7 @@
 		};
 		1C76CF50240B921100A9659D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F818521FD22A65C14184CF /* Pods-TableViewMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
